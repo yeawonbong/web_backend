@@ -21,8 +21,8 @@ public class InfoServlet extends HttpServlet {
         String contentPath = request.getContextPath();
         String remoteAddr = request.getRemoteAddr();
 
-        out.println("uri : " + uri + "<br>");
-        out.println("url : " + url + "<br>");
+        out.println("uri :  " + uri + "<br>");
+        out.println("url :  " + url + "<br>");
         out.println("contentPath : " + contentPath + "<br>");
         out.println("remoteAddr : " + remoteAddr + "<br>");
 

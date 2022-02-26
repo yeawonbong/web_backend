@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="taglibs-standard-impl-1.2.5">
+    <CLASSES>
+      <root url="jar:///opt/homebrew/Cellar/tomcat@8/8.5.75/libexec/lib/taglibs-standard-impl-1.2.5.jar!/" />
+      <root url="jar:///opt/homebrew/Cellar/tomcat@8/8.5.75/libexec/lib/taglibs-standard-jstlel-1.2.5.jar!/" />
+      <root url="jar:///opt/homebrew/Cellar/tomcat@8/8.5.75/libexec/lib/taglibs-standard-spec-1.2.5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="userBean" class="kr.or.connect.diexam01.UserBean"/>
+	<bean id="e" class="kr.or.connect.diexam01.Engine"/>
+	<bean id="car" class="kr.or.connect.diexam01.Car">
+		<property name="engine" ref="e"></property><!-- 위에서 생성된 e Bean을 여기서 사용하겠다는 의미 setEngine() -->
+										 <!-- setEngine() 실행할건데, 그 때 인자를 (ref) e를 넣어준다는 의미 -->
+	</bean>
+	
+</beans>

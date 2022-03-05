@@ -1,6 +1,7 @@
 package kr.or.connect.diexam01;
 
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class ApplicationContextExam02 {
@@ -12,6 +13,6 @@ public class ApplicationContextExam02 {
 
 		Car car = (Car)ac.getBean("car");
 		car.run();
-		
+		((ConfigurableApplicationContext)ac).close();
 	}
 }

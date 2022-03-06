@@ -1,7 +1,12 @@
 package kr.or.connect.diexam01;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
 public class Car {
 	
+	@Autowired //알아서 이 객체를 찾아서 주입하라는 뜻, setter가 필요없다.
 	private Engine v8;
 	
 	public Car() {
@@ -11,6 +16,7 @@ public class Car {
 	public void setEngine(Engine e) {
 		this.v8 = e;
 	}
+//ComponentScan 한다면 이 메소드는 없어도 됨.
 	
 	public void run() {
 		System.out.println("엔진을 이용하여 달립니다.");
